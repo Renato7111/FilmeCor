@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teoria das Cores no Cinema</title>
+  <title>Teoria das Cores em Filmes</title>
   <style>
     * {
       box-sizing: border-box;
@@ -11,102 +11,124 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to left, #222233, #444466);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #2b2b3d);
       color: #fff;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
 
     section {
-      padding: 50px 20px;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
+      animation: fadeIn 1.5s ease-in;
     }
 
     h1, h2 {
       color: #ffcc00;
       text-align: center;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     }
 
     p {
       line-height: 1.6;
       font-size: 18px;
       text-align: justify;
+      transition: color 0.3s ease;
     }
 
     .filme {
-      margin-top: 50px;
-      border-radius: 12px;
-      padding: 25px;
-      background: rgba(255,255,255,0.08);
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      margin-top: 60px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease;
     }
 
     .filme:hover {
-      transform: scale(1.02);
-      transition: 0.3s ease-in-out;
+      transform: translateY(-5px);
     }
 
     img {
       width: 100%;
-      max-width: 550px;
-      height: auto;
+      max-width: 600px;
+      height: 350px;
       object-fit: cover;
-      border-radius: 10px;
+      object-position: center;
+      border-radius: 12px;
       margin: 20px auto;
       display: block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
 
     .cores {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
+      margin: 10px 0;
     }
 
     .cor {
       display: flex;
       align-items: center;
-      background: rgba(255, 255, 255, 0.1);
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
-      padding: 8px 12px;
+      padding: 5px 10px;
+      transition: transform 0.3s;
+    }
+
+    .cor:hover {
+      transform: scale(1.05);
     }
 
     .caixa-cor {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       border-radius: 4px;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <section>
-    <h1>Teoria das Cores no Cinema</h1>
-    <p>No cinema, as cores são essenciais para transmitir emoções e construir atmosferas. Elas ajudam a definir personagens e intensificar a narrativa visual.</p>
+    <h1>Teoria das Cores em Filmes</h1>
+    <p>A teoria das cores no cinema não serve apenas para estética, mas comunica emoções, intensifica atmosferas e traduz sentimentos dos personagens. Cada cor carrega um significado que, quando bem usado, enriquece a narrativa.</p>
 
     <div class="filme">
       <h2>Divertidamente 2</h2>
-      <p>Os sentimentos ganham vida através de cores vibrantes, representando emoções que guiam a protagonista Riley.</p>
+      <p>As emoções ganham vida através de personagens coloridos, cada um representando uma sensação específica. As novas emoções introduzidas trazem ainda mais riqueza visual e emocional:</p>
       <div class="cores">
         <div class="cor"><div class="caixa-cor" style="background: #FFD700;"></div> Alegria – felicidade e energia</div>
         <div class="cor"><div class="caixa-cor" style="background: #1E90FF;"></div> Tristeza – introspecção e empatia</div>
         <div class="cor"><div class="caixa-cor" style="background: #FF4500;"></div> Raiva – frustração e impulso</div>
         <div class="cor"><div class="caixa-cor" style="background: #7FFF00;"></div> Nojinho – seletividade e proteção</div>
         <div class="cor"><div class="caixa-cor" style="background: #8A2BE2;"></div> Medo – alerta e cautela</div>
+        <div class="cor"><div class="caixa-cor" style="background: #A9A9A9;"></div> Tédio – apatia e falta de estímulo</div>
+        <div class="cor"><div class="caixa-cor" style="background: #FF6347;"></div> Ansiedade – preocupação constante</div>
+        <div class="cor"><div class="caixa-cor" style="background: #F5DEB3;"></div> Vergonha – insegurança e autoconsciência</div>
       </div>
+      <p>Essas escolhas cromáticas facilitam a identificação emocional do público com os conflitos internos da protagonista Riley.</p>
       <img src="https://i.imgur.com/feOMFzb.jpeg" alt="Divertidamente 2">
     </div>
 
     <div class="filme">
       <h2>Superman Legacy</h2>
-      <p>O icônico herói tem uma paleta de cores que expressa sua identidade e valores.</p>
+      <p>O herói clássico é representado por cores marcantes que refletem sua essência e conflitos:</p>
       <div class="cores">
-        <div class="cor"><div class="caixa-cor" style="background: #1E90FF;"></div> Azul – esperança e proteção</div>
-        <div class="cor"><div class="caixa-cor" style="background: #DC143C;"></div> Vermelho – coragem e paixão</div>
-        <div class="cor"><div class="caixa-cor" style="background: #FFD700;"></div> Amarelo – inspiração e justiça</div>
+        <div class="cor"><div class="caixa-cor" style="background: #1E90FF;"></div> Azul – esperança e proteção (Superman)</div>
+        <div class="cor"><div class="caixa-cor" style="background: #DC143C;"></div> Vermelho – coragem e paixão (capa de Superman)</div>
+        <div class="cor"><div class="caixa-cor" style="background: #FFD700;"></div> Amarelo – inspiração e justiça (símbolo do "S")</div>
       </div>
+      <p>Essas cores destacam a dualidade entre o super-herói poderoso e o humano em busca de equilíbrio moral.</p>
       <img src="https://i.imgur.com/ORes2SW.jpeg" alt="Superman Legacy">
     </div>
 
